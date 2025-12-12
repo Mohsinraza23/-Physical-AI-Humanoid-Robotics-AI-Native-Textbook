@@ -68,3 +68,180 @@ specifyplus --version
 ## 💾 Create Project Folder (Desktop)
 
 
+# Move to Desktop
+cd ~/Desktop
+
+# Create folder
+mkdir robotics-ai-book
+
+# Enter folder
+cd robotics-ai-book
+
+📘 Initialize the Project
+# Initialize SpecifyPlus system
+specifyplus init .
+
+# run Claude or Gemini or Quen 
+
+📚 Book Generation Workflow (Spec-Kit Plus)
+
+Your complete flow:
+
+1️⃣ /sp.constitution — Defines the entire rule system for the book.
+2️⃣ /sp.specify — Full requirements gathering — tech-agnostic.
+3️⃣ /sp.plan — Architecture & phases.
+4️⃣ /sp.tasks — Breaks plan into actionable tasks.
+
+Then run fast commands in Claude + SpecifyPlus to generate the system.
+
+📝 Spec-Kit Plus Constitution
+
+Version: 1.0
+
+Purpose:
+Defines governing rules, workflow, terminology, quality standards, and constraints for producing a fully AI-native textbook and RAG system. Ensures all outputs are structured, testable, and hackathon-ready.
+
+Guiding Principles:
+
+Outputs must be deterministic, structured, and testable.
+
+No hallucinations or unstated assumptions.
+
+Every requirement must map to tasks; tasks must map to implementations.
+
+UI/UX must be professional, readable, and academic.
+
+Multi-agent architecture must remain modular and maintainable.
+
+RAG system must be accurate, citation-focused, and interactive.
+
+Translation workflows must maintain semantic accuracy in Urdu.
+
+Personalization logic must respect user metadata.
+
+Key Components:
+
+Agents & Subagents: AI modules for retrieval, translation, personalization, code-writing, planning.
+
+RAG System: Chunking, embeddings, vector search, and answer generation.
+
+Functional Requirements: User stories for reading textbook, chatbot, Urdu translation, personalization, auth, dashboard, quizzes, subagents.
+
+Non-Functional Requirements: Performance, latency, responsiveness, accessibility, concurrency.
+
+Acceptance Criteria: All hackathon base + bonus features deployed, demo ready < 90s.
+
+✅ /sp.specify — Functional Specification
+
+Project Name: AI-Native Physical AI & Humanoid Robotics Textbook Platform
+
+Objective:
+Build a complete AI-native textbook system teaching Physical AI & Humanoid Robotics, including:
+
+Full interactive textbook
+
+RAG chatbot
+
+Select-text QA
+
+Urdu translation
+
+Personalization & dashboards
+
+Authentication
+
+Multi-agent support
+
+Deployable frontend + backend
+
+Scope:
+
+In-scope:
+
+AI-native textbook experience with responsive UI
+
+Chapter navigation, TOC, RAG chatbot
+
+Urdu translation (RTL)
+
+Personalized dashboards based on user metadata
+
+Subagent-based code generation
+
+Frontend deployment (GitHub Pages/Vercel)
+
+Backend deployment to cloud server
+
+Out-of-scope:
+
+Real robot control or simulation
+
+Hardware-based execution
+
+Functional Requirements:
+
+US1: Read multi-chapter textbook
+
+US2: Ask questions via RAG chatbot
+
+US3: Translate chapters to Urdu (RTL)
+
+US4: Personalize content based on user metadata
+
+US5: Authentication system
+
+US6: Dashboard with progress & recommendations
+
+US7: AI-generated summaries & quizzes
+
+US8: Multi-agent architecture with subagents
+
+Non-Functional Requirements:
+
+Load < 2s, Chatbot latency < 2s
+
+RAG accuracy ≥ 90%
+
+Mobile responsive, WCAG AA accessible
+
+100 concurrent visitors minimum
+
+Edge Cases:
+
+Empty or non-English selection
+
+Long chapters chunking
+
+Code blocks not translated
+
+Out-of-book questions handled
+
+Acceptance Criteria:
+
+All user stories implemented
+
+Bonus features included
+
+Deployable frontend + backend
+
+Clean GitHub repo
+
+Demo video < 90 seconds
+
+🎯 Next Steps
+
+/sp.plan — Architecture & phased plan
+
+/sp.implement — Code generation with Claude & subagents
+
+Deployment — GitHub Pages / Vercel (frontend), cloud backend
+
+⭐ Author Links
+
+📧 Email — mohsinraza332@gmail.com
+
+🔗 LinkedIn — Mohsin Raza
+
+📱 Phone — 03452615590
+
+<h3 align="center">✨ Created with ❤️ by Mohsin Raza — Pakistan Tech Community ✨</h3> ```
