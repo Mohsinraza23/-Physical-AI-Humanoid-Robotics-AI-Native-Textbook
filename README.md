@@ -7,11 +7,6 @@
 
 Built entirely by autonomous AI agents using **SpecifyPlus**, **Claude 4.5**, and **Gemini 1.5 Pro** — with **zero manual writing**.
 
-[![GitHub Stars](https://img.shields.io/github/stars/Mohsinraza23-Physical-AI-Humanoid-Robotics-AI-Native-Textbook?style=social&label=Stars)](https://github.com/Mohsinraza23-Physical-AI-Humanoid-Robotics-AI-Native-Textbook/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Made in Pakistan](https://img.shields.io/badge/Made_in-Pakistan-%E2%9D%A4-green)](https://github.com/Mohsinraza23)
-[![Hackathon Project](https://img.shields.io/badge/Hackathon-Project-orange)](https://github.com/Mohsinraza23)
-
 > **A fully autonomous AI system created this book, UI, RAG chatbot, quizzes, translations, and dashboards.**
 
 Built with ❤️ by **Mohsin Raza** — Pakistan 🇵🇰
@@ -369,4 +364,10 @@ specification:
     - Demo video < 90 seconds.
 
 end
+
+
+/sp.plan
+
+
+/sp.implement
 
