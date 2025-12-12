@@ -61,5 +61,10 @@ pip install specifyplus
 # Verify installation
 specifyplus --version
 
+---
+
+```powershell
 
 ## 💾 Create Project Folder (Desktop)
+
+
