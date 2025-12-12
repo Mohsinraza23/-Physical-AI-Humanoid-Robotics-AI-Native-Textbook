@@ -5,8 +5,6 @@
   Built with ❤️ by <b>Mohsin Raza</b>
 </p>
 
----
-
 <p align="center">
   <img src="https://img.shields.io/badge/AI%20Powered-Gemini%202.5-blue?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Framework-SpecifyPlus-green?style=for-the-badge"/>
@@ -16,28 +14,26 @@
 
 ---
 
-## 🧑‍💻 Author — **Mohsin Raza**
+## 🧑‍💻 Author — Mohsin Raza
 
 - 🎓 Full-Stack Developer • AI Engineer  
 - 🤖 Robotics & Automation Enthusiast  
-- 📧 **Email:** mohsinraza332@gmail.com  
-- 🔗 **LinkedIn:** [Mohsin Raza](https://www.linkedin.com/in/mohsin-raza-a514392b6)  
-- 📱 **Phone:** 03452615590  
+- 📧 Email: mohsinraza332@gmail.com  
+- 🔗 LinkedIn: [Mohsin Raza](https://www.linkedin.com/in/mohsin-raza-a514392b6)  
+- 📱 Phone: 03452615590  
 
 ---
 
 ## 📑 Table of Contents
 
-- [🚀 Introduction](#-introduction)
-- [⚙️ Install Requirements](#️-install-requirements)
-- [💾 Create Project Folder](#-create-project-folder)
-- [📘 Initialize the Project](#-initialize-the-project)
-- [🔐 Set Gemini API Key](#-set-gemini-api-key)
-- [📚 Generate Book](#-generate-book)
-- [🧠 Book Topics](#-book-topics)
-- [🎯 Project Goal](#-project-goal)
-- [📌 Notes](#-notes)
-- [⭐ Author Links](#-author-links)
+- [🚀 Introduction](#-introduction)  
+- [⚙️ Install Requirements](#️-install-requirements)  
+- [💾 Create Project Folder](#-create-project-folder)  
+- [📘 Initialize the Project](#-initialize-the-project)  
+- [📚 Book Generation Workflow](#-book-generation-workflow)  
+- [📝 Constitution & Specification](#-constitution--specification)  
+- [🎯 Next Steps](#-next-steps)  
+- [⭐ Author Links](#-author-links)  
 
 ---
 
@@ -45,7 +41,7 @@
 
 This repository contains the **AI-generated educational textbook**  
 **“Physical AI & Humanoid Robotics — AI-Native Edition”**,  
-created using **SpecifyPlus**, **Gemini API**, and **Claude-Code Router**.
+created using **SpecifyPlus**, **Gemini API**, and **Claude-Code Router**.  
 
 A fully automated system that generates complete book content  
 with chapters, sections, explanations, and diagrams.
@@ -60,46 +56,35 @@ pip install specifyplus
 
 # Verify installation
 specifyplus --version
-
----
-
-```powershell
-
-## 💾 Create Project Folder (Desktop)
-
-
+💾 Create Project Folder
+powershell
+Copy code
 # Move to Desktop
 cd ~/Desktop
 
-# Create folder
+# Create project folder
 mkdir robotics-ai-book
-
-# Enter folder
 cd robotics-ai-book
-
 📘 Initialize the Project
+powershell
+Copy code
 # Initialize SpecifyPlus system
 specifyplus init .
 
-# run Claude or Gemini or Quen 
-
-📚 Book Generation Workflow (Spec-Kit Plus)
-
-Your complete flow:
-
+# Run Claude or Gemini or Quen
+📚 Book Generation Workflow
 1️⃣ /sp.constitution — Defines the entire rule system for the book.
-2️⃣ /sp.specify — Full requirements gathering — tech-agnostic.
-3️⃣ /sp.plan — Architecture & phases.
+2️⃣ /sp.specify — Full functional requirements, tech-agnostic.
+3️⃣ /sp.plan — Architecture & phased plan.
 4️⃣ /sp.tasks — Breaks plan into actionable tasks.
+5️⃣ /sp.implement — Code generation with Claude + subagents.
 
-Then run fast commands in Claude + SpecifyPlus to generate the system.
-
-📝 Spec-Kit Plus Constitution
-
+📝 Constitution & Specification
+Constitution
 Version: 1.0
 
 Purpose:
-Defines governing rules, workflow, terminology, quality standards, and constraints for producing a fully AI-native textbook and RAG system. Ensures all outputs are structured, testable, and hackathon-ready.
+Defines workflow, rules, quality standards, and constraints for producing a fully AI-native textbook & RAG system. Ensures outputs are structured, testable, and hackathon-ready.
 
 Guiding Principles:
 
@@ -107,78 +92,77 @@ Outputs must be deterministic, structured, and testable.
 
 No hallucinations or unstated assumptions.
 
-Every requirement must map to tasks; tasks must map to implementations.
+Each requirement maps to tasks; tasks map to implementations.
 
-UI/UX must be professional, readable, and academic.
+UI/UX must be professional and academic.
 
-Multi-agent architecture must remain modular and maintainable.
+Multi-agent architecture must remain modular.
 
-RAG system must be accurate, citation-focused, and interactive.
+RAG system must be accurate and citation-focused.
 
-Translation workflows must maintain semantic accuracy in Urdu.
+Urdu translation must preserve meaning & formatting.
 
-Personalization logic must respect user metadata.
+Personalization must respect user metadata.
 
 Key Components:
 
-Agents & Subagents: AI modules for retrieval, translation, personalization, code-writing, planning.
+Agents & Subagents (file-writing, planning, code generation, UI)
 
-RAG System: Chunking, embeddings, vector search, and answer generation.
+RAG system: chunking, embeddings, vector search, answer generation
 
-Functional Requirements: User stories for reading textbook, chatbot, Urdu translation, personalization, auth, dashboard, quizzes, subagents.
+Functional requirements: textbook reading, chatbot, Urdu translation, personalization, auth, dashboard, quizzes, subagents
 
-Non-Functional Requirements: Performance, latency, responsiveness, accessibility, concurrency.
+Non-functional requirements: performance, latency, responsiveness, accessibility, concurrency
 
-Acceptance Criteria: All hackathon base + bonus features deployed, demo ready < 90s.
+Acceptance criteria: All hackathon base + bonus features deployed, demo < 90s
 
-✅ /sp.specify — Functional Specification
-
+Functional Specification (/sp.specify)
 Project Name: AI-Native Physical AI & Humanoid Robotics Textbook Platform
 
 Objective:
-Build a complete AI-native textbook system teaching Physical AI & Humanoid Robotics, including:
+Create a complete AI-native textbook system teaching Physical AI & Humanoid Robotics, including:
 
 Full interactive textbook
 
-RAG chatbot
+Built-in RAG chatbot
 
-Select-text QA
+Select-text-based question answering
 
-Urdu translation
+Urdu translation (RTL)
 
-Personalization & dashboards
+User personalization
 
-Authentication
+Authentication & dashboards
 
-Multi-agent support
+Multi-agent support with reusable intelligence
 
 Deployable frontend + backend
 
 Scope:
 
-In-scope:
+In-Scope:
 
-AI-native textbook experience with responsive UI
+AI-native textbook experience with responsive UI & TOC
 
-Chapter navigation, TOC, RAG chatbot
+Chapter navigation & RAG chatbot
 
-Urdu translation (RTL)
+Urdu translation mode (RTL)
 
 Personalized dashboards based on user metadata
 
-Subagent-based code generation
+Subagent-based code generation workflows
 
-Frontend deployment (GitHub Pages/Vercel)
+Frontend deployment: GitHub Pages / Vercel
 
-Backend deployment to cloud server
+Backend deployment: Cloud server
 
-Out-of-scope:
+Out-of-Scope:
 
 Real robot control or simulation
 
-Hardware-based execution
+Hardware execution
 
-Functional Requirements:
+Functional Requirements (User Stories):
 
 US1: Read multi-chapter textbook
 
@@ -186,7 +170,7 @@ US2: Ask questions via RAG chatbot
 
 US3: Translate chapters to Urdu (RTL)
 
-US4: Personalize content based on user metadata
+US4: Personalize content
 
 US5: Authentication system
 
@@ -202,42 +186,46 @@ Load < 2s, Chatbot latency < 2s
 
 RAG accuracy ≥ 90%
 
-Mobile responsive, WCAG AA accessible
+Mobile responsive, WCAG AA accessibility
 
-100 concurrent visitors minimum
+Minimum 100 concurrent visitors
 
 Edge Cases:
 
-Empty or non-English selection
+Empty or non-English selection → fallback to full book
 
-Long chapters chunking
+Urdu translation excludes code blocks
 
-Code blocks not translated
+Long chapters → chunking preserves sentences
 
-Out-of-book questions handled
+Chatbot asked outside-book questions → limitation notice
 
 Acceptance Criteria:
 
 All user stories implemented
 
-Bonus features included
+All bonus features included
 
 Deployable frontend + backend
 
 Clean GitHub repo
 
-Demo video < 90 seconds
+Textbook professional & readable
+
+Chatbot accurate with citations
+
+Demo < 90s
 
 🎯 Next Steps
-
 /sp.plan — Architecture & phased plan
 
-/sp.implement — Code generation with Claude & subagents
+/sp.tasks — Break plan into tasks
 
-Deployment — GitHub Pages / Vercel (frontend), cloud backend
+/sp.implement — Generate code using Claude & subagents
+
+Deployment — Frontend: GitHub Pages / Vercel, Backend: Cloud
 
 ⭐ Author Links
-
 📧 Email — mohsinraza332@gmail.com
 
 🔗 LinkedIn — Mohsin Raza
@@ -245,3 +233,10 @@ Deployment — GitHub Pages / Vercel (frontend), cloud backend
 📱 Phone — 03452615590
 
 <h3 align="center">✨ Created with ❤️ by Mohsin Raza — Pakistan Tech Community ✨</h3> ```
+✅ This is now:
+
+
+
+
+
+
