@@ -78,3 +78,176 @@ specifyplus init .
 
 # 4. Start the magic
 specifyplus run
+
+---
+## /sp.Constitution
+
+# Spec-Kit Plus Constitution  
+# Physical AI & Humanoid Robotics — AI-Native Textbook System  
+# Gemini 2.5 Flash Edition — Multi-Agent, RAG, Urdu Translation, Personalization
+
+constitution:
+
+  version: 1.0
+
+  purpose: |
+    This constitution defines the governing rules, workflow, terminology,
+    quality bar, and constraints for producing a fully AI-native technical
+    textbook and RAG system using Spec-Kit Plus, Gemini 2.5 Flash, Claude Code,
+    and Qdrant Cloud.  
+    It ensures all generated outputs (specifications, plans, tasks, and
+    implementations) follow a unified structure, are verifiable, and produce a
+    complete hackathon-ready textbook platform.
+
+  guiding_principles:
+    - All outputs must be deterministic, structured, testable, complete,
+      and technology-agnostic unless the phase explicitly requires implementation detail.
+    - The LLM must never hallucinate features or add unstated requirements.
+    - Every requirement must map to tasks; every task must map to implemented files.
+    - UI/UX must follow professional textbook standards (clean, readable, academic).
+    - Multi-agent architecture must remain modular and maintainable.
+    - The RAG system must be accurate, high-recall, and citation-focused.
+    - Translation workflows must maintain semantic accuracy in Urdu.
+    - Personalization logic must respect user background metadata.
+    - All components must meet the hackathon scoring criteria.
+
+  definitions:
+    ai_native_book: "A technical textbook built with Docusaurus that supports AI assistance, RAG, translation, personalization, and interactive features."
+    rag_system: "Retrieval-Augmented Generation architecture including chunking, embeddings, vector search, and answer generation."
+    agent: "An AI module with a specialized function (retrieval, translation, personalization, file-writing, planning)."
+    subagent: "A Claude Code micro-agent performing isolated tasks (UI, file editing, code writing)."
+    specification: "A complete and unambiguous description of functional requirements."
+    implementation_task: "A granular action item resulting in a file, function, or module."
+    done_definition: "The output is fully functional, meets success criteria, passes quality validation, and produces no ambiguity."
+
+  workflow:
+
+    - "/sp.constitution":
+        description: "Establishes rules, terminology, and governance. Must be created once at project start."
+
+    - "/sp.specify":
+        description: |
+          Produces the full functional specification.  
+          Must be:
+          - technology-agnostic  
+          - measurable  
+          - testable  
+          - complete  
+          - free of implementation details  
+          This becomes the contract for the entire project.
+
+    - "/sp.plan":
+        description: |
+          Converts the specification into a full architectural plan.  
+          Includes:
+          - phases  
+          - sequence  
+          - dependencies  
+          - system architecture diagrams  
+          - high-level data flow  
+          - agent interactions  
+
+    - "/sp.tasks":
+        description: |
+          Breaks the plan into tasks.  
+          Every task must:
+          - Have a clear description  
+          - Output must be a file, module, component, or behavior  
+          - Include acceptance criteria  
+          - Be ordered by dependency  
+
+    - "/sp.implement":
+        description: |
+          Claude Code + Subagents create actual code, files, and components.  
+          All output must:
+          - match tasks exactly  
+          - pass automated quality checks  
+          - never diverge from specification  
+          - avoid duplication  
+          - maintain full readability  
+
+  quality_standards:
+
+    specifications:
+      - must include edge cases
+      - must include success criteria
+      - must avoid naming technologies
+      - must avoid implementation details
+      - must define user stories clearly
+
+    plans:
+      - must include architecture diagrams (text-based)
+      - must detail component boundaries
+      - must describe agent responsibilities
+      - must describe data pipelines
+      - must show cross-phase dependencies
+
+    tasks:
+      - must be ≤ 200 tasks total
+      - each task outputs something concrete
+      - each task must be unambiguous and testable
+      - each task must map back to a requirement
+
+    implementations:
+      - must use Claude Code subagents for file operations
+      - must follow clean architecture
+      - must not produce unused files
+      - must ensure consistency across backend, frontend, agents
+      - must not exceed hackathon complexity limits
+
+  constraints:
+
+    general:
+      - No hallucinations permitted.
+      - No unstated assumptions unless explicitly validated.
+      - No mixing of specification and implementation in wrong phases.
+
+    frontend:
+      - Must use Docusaurus.
+      - Must maintain high readability for textbook typography.
+      - Urdu translation must support RTL.
+      - Chatbot must elegantly overlay as a floating assistant.
+
+    backend:
+      - Must use FastAPI.
+      - Must use Gemini 2.5 Flash + Embeddings.
+      - Must use Qdrant Cloud vector DB.
+      - PostgreSQL optional unless personalization/auth required.
+
+    rag:
+      - Answers must include citations.
+      - Chunking must avoid cutting sentences mid-way.
+      - Retrieval must use cosine similarity or default Qdrant scoring.
+      - Selected text override must be supported.
+
+    translation:
+      - Urdu must preserve meaning, tone, and formatting.
+      - RTL CSS must apply only in Urdu mode.
+
+    personalization:
+      - Logic must depend on user background metadata.
+      - Must not alter core meaning of content.
+
+    agents:
+      - Each agent must have a narrow responsibility.
+      - All agents must report to the master orchestrator agent.
+      - Claude Code subagents must be used for code-generation workflows.
+
+  acceptance_criteria:
+    - All hackathon requirements implemented.
+    - All bonus features implemented:
+        * Subagents  
+        * Personalization  
+        * Urdu translation  
+        * BetterAuth  
+        * Interactive RAG  
+        * Summaries & quizzes  
+        * Dashboard  
+    - All components deployed successfully.
+    - Book readable on mobile, tablet, and laptop.
+    - Chatbot accurate and citation-based.
+    - Translation reliable.
+    - Repo contains clean directory structure.
+    - Demo video < 90 seconds validated.
+
+end
