@@ -1,6 +1,5 @@
-# Physical-AI-Humanoid-Robotics-AI-Native-Textbook
+# 🤖 Physical AI & Humanoid Robotics — AI-Native Textbook
 
-<h1 align="center">🤖 Physical AI & Humanoid Robotics — AI-Native Textbook</h1>
 <p align="center">
   <b>Hackathon Project • AI-Powered Textbook Generator</b><br/>
   Built with ❤️ by <b>Mohsin Raza</b>
@@ -22,7 +21,7 @@
 - 🎓 Full-Stack Developer • AI Engineer  
 - 🤖 Robotics & Automation Enthusiast  
 - 📧 **Email:** mohsinraza332@gmail.com  
-- 🔗 **LinkedIn:** www.linkedin.com/in/mohsin-raza-a514392b6  
+- 🔗 **LinkedIn:** [Mohsin Raza](https://www.linkedin.com/in/mohsin-raza-a514392b6)  
 - 📱 **Phone:** 03452615590  
 
 ---
@@ -63,45 +62,3 @@ pip install specifyplus
 specifyplus --version
 
 
-💾 Create Project Folder (Desktop)
-
-# Move to Desktop
-cd ~/Desktop
-
-# Create folder
-mkdir robotics-ai-book
-
-# Enter folder
-cd robotics-ai-book
-
-📘 Initialize the Project
-
-
-# Initialize SpecifyPlus system
-specifyplus init .
-
-# run Claude or Gemini or Quen 
-
-📚 # Book Generation Workflow (Spec-Kit Plus)
-
-Your complete flow:
-
-1️⃣ /sp.constitution
-
-Defines the entire rule system for the book.
-
-2️⃣ /sp.specify
-
-Full requirements gathering — tech-agnostic.
-
-3️⃣ /sp.plan
-
-Architecture & phases.
-
-4️⃣ /sp.tasks
-
-Breaks plan into actionable tasks.
-
-5️⃣ /sp.implement
-
-Claude Code + Subagents generate files.
