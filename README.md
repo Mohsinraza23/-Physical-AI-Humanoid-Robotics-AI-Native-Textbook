@@ -17,7 +17,7 @@ Built with ❤️ by **Mohsin Raza** — Pakistan 🇵🇰
 ### 🧑‍💻 Author: Mohsin Raza
 - 🎓 Full-Stack Developer & AI Engineer  
 - 🤖 Specialized in Physical AI, Robotics & Agentic Systems  
-- 📧 Email: [mohsinraza332@gmail.com](mailto:mohsinraza332@gmail.com)  
+- 📧 Email: [mohsinraza2248@gmail.com](mailto:mohsinraza332@gmail.com)  
 - 🔗 LinkedIn: [Mohsin Raza](https://www.linkedin.com/in/mohsinraza23)  
 - 🐦 Twitter/X: [@mohsinraza23](https://twitter.com/mohsinraza23)  
 - 📱 WhatsApp/Phone: +92 345 2615590  
@@ -78,3 +78,375 @@ specifyplus init .
 
 # 4. Start the magic
 specifyplus run
+
+
+
+✅ /sp.constitution
+
+# Spec-Kit Plus Constitution  
+# Physical AI & Humanoid Robotics — AI-Native Textbook System  
+# Gemini 2.5 Flash Edition — Multi-Agent, RAG, Urdu Translation, Personalization
+
+constitution:
+
+  version: 1.0
+
+  purpose: |
+    This constitution defines the governing rules, workflow, terminology,
+    quality bar, and constraints for producing a fully AI-native technical
+    textbook and RAG system using Spec-Kit Plus, Gemini 2.5 Flash, Claude Code,
+    and Qdrant Cloud.  
+    It ensures all generated outputs (specifications, plans, tasks, and
+    implementations) follow a unified structure, are verifiable, and produce a
+    complete hackathon-ready textbook platform.
+
+  guiding_principles:
+    - All outputs must be deterministic, structured, testable, complete,
+      and technology-agnostic unless the phase explicitly requires implementation detail.
+    - The LLM must never hallucinate features or add unstated requirements.
+    - Every requirement must map to tasks; every task must map to implemented files.
+    - UI/UX must follow professional textbook standards (clean, readable, academic).
+    - Multi-agent architecture must remain modular and maintainable.
+    - The RAG system must be accurate, high-recall, and citation-focused.
+    - Translation workflows must maintain semantic accuracy in Urdu.
+    - Personalization logic must respect user background metadata.
+    - All components must meet the hackathon scoring criteria.
+
+  definitions:
+    ai_native_book: "A technical textbook built with Docusaurus that supports AI assistance, RAG, translation, personalization, and interactive features."
+    rag_system: "Retrieval-Augmented Generation architecture including chunking, embeddings, vector search, and answer generation."
+    agent: "An AI module with a specialized function (retrieval, translation, personalization, file-writing, planning)."
+    subagent: "A Claude Code micro-agent performing isolated tasks (UI, file editing, code writing)."
+    specification: "A complete and unambiguous description of functional requirements."
+    implementation_task: "A granular action item resulting in a file, function, or module."
+    done_definition: "The output is fully functional, meets success criteria, passes quality validation, and produces no ambiguity."
+
+  workflow:
+
+    - "/sp.constitution":
+        description: "Establishes rules, terminology, and governance. Must be created once at project start."
+
+    - "/sp.specify":
+        description: |
+          Produces the full functional specification.  
+          Must be:
+          - technology-agnostic  
+          - measurable  
+          - testable  
+          - complete  
+          - free of implementation details  
+          This becomes the contract for the entire project.
+
+    - "/sp.plan":
+        description: |
+          Converts the specification into a full architectural plan.  
+          Includes:
+          - phases  
+          - sequence  
+          - dependencies  
+          - system architecture diagrams  
+          - high-level data flow  
+          - agent interactions  
+
+    - "/sp.tasks":
+        description: |
+          Breaks the plan into tasks.  
+          Every task must:
+          - Have a clear description  
+          - Output must be a file, module, component, or behavior  
+          - Include acceptance criteria  
+          - Be ordered by dependency  
+
+    - "/sp.implement":
+        description: |
+          Claude Code + Subagents create actual code, files, and components.  
+          All output must:
+          - match tasks exactly  
+          - pass automated quality checks  
+          - never diverge from specification  
+          - avoid duplication  
+          - maintain full readability  
+
+  quality_standards:
+
+    specifications:
+      - must include edge cases
+      - must include success criteria
+      - must avoid naming technologies
+      - must avoid implementation details
+      - must define user stories clearly
+
+    plans:
+      - must include architecture diagrams (text-based)
+      - must detail component boundaries
+      - must describe agent responsibilities
+      - must describe data pipelines
+      - must show cross-phase dependencies
+
+    tasks:
+      - must be ≤ 200 tasks total
+      - each task outputs something concrete
+      - each task must be unambiguous and testable
+      - each task must map back to a requirement
+
+    implementations:
+      - must use Claude Code subagents for file operations
+      - must follow clean architecture
+      - must not produce unused files
+      - must ensure consistency across backend, frontend, agents
+      - must not exceed hackathon complexity limits
+
+  constraints:
+
+    general:
+      - No hallucinations permitted.
+      - No unstated assumptions unless explicitly validated.
+      - No mixing of specification and implementation in wrong phases.
+
+    frontend:
+      - Must use Docusaurus.
+      - Must maintain high readability for textbook typography.
+      - Urdu translation must support RTL.
+      - Chatbot must elegantly overlay as a floating assistant.
+
+    backend:
+      - Must use FastAPI.
+      - Must use Gemini 2.5 Flash + Embeddings.
+      - Must use Qdrant Cloud vector DB.
+      - PostgreSQL optional unless personalization/auth required.
+
+    rag:
+      - Answers must include citations.
+      - Chunking must avoid cutting sentences mid-way.
+      - Retrieval must use cosine similarity or default Qdrant scoring.
+      - Selected text override must be supported.
+
+    translation:
+      - Urdu must preserve meaning, tone, and formatting.
+      - RTL CSS must apply only in Urdu mode.
+
+    personalization:
+      - Logic must depend on user background metadata.
+      - Must not alter core meaning of content.
+
+    agents:
+      - Each agent must have a narrow responsibility.
+      - All agents must report to the master orchestrator agent.
+      - Claude Code subagents must be used for code-generation workflows.
+
+  acceptance_criteria:
+    - All hackathon requirements implemented.
+    - All bonus features implemented:
+        * Subagents  
+        * Personalization  
+        * Urdu translation  
+        * BetterAuth  
+        * Interactive RAG  
+        * Summaries & quizzes  
+        * Dashboard  
+    - All components deployed successfully.
+    - Book readable on mobile, tablet, and laptop.
+    - Chatbot accurate and citation-based.
+    - Translation reliable.
+    - Repo contains clean directory structure.
+    - Demo video < 90 seconds validated.
+
+end
+
+
+✅ /sp.specify
+
+specification:
+
+  project_name: "AI-Native Physical AI & Humanoid Robotics Textbook Platform"
+
+  objective: |
+    Build a complete AI-native technical textbook system that teaches
+    Physical AI & Humanoid Robotics.  
+    The system must include:  
+    - A full interactive textbook  
+    - A built-in RAG chatbot  
+    - Select-text-based question answering  
+    - Urdu translation  
+    - User personalization  
+    - Authentication  
+    - User dashboards  
+    - Multi-agent support with reusable intelligence  
+    - Fully deployable frontend + backend  
+    - Hackathon-ready scoring compliance
+
+  scope:
+    in_scope:
+      - AI-native textbook experience
+      - Responsive book UI with professional typography
+      - Table of contents
+      - Chapter navigation
+      - RAG chatbot embedded inside the UI
+      - Select-text QA (ask questions from highlighted content)
+      - Urdu translation mode (RTL)
+      - Personalization of chapters based on user background
+      - Auth system for signup/login
+      - Collecting user background metadata
+      - Personalized dashboard
+      - User progress tracking
+      - Subagent-based code generation workflows
+      - Deployment to GitHub Pages / Vercel
+      - Backend deployment to cloud server
+    out_of_scope:
+      - Real robot control
+      - ROS/Gazebo simulation integration
+      - Hardware-based execution
+
+  functional_requirements:
+
+    # --------------------------
+    # User Story 1 — Read Textbook
+    # --------------------------
+    - id: US1
+      title: "Users can read a structured, cleanly formatted, multi-chapter textbook"
+      requirements:
+        - Chapters must appear in a structured table of contents.
+        - Typography must be readable and consistent.
+        - Pages must load instantly without visual shifts.
+        - Dark/light modes must be supported.
+        - Mobile, tablet, desktop responsive views required.
+        - Chapter headers must be consistent and clean.
+      success_criteria:
+        - Users can move from chapter to chapter without page reload.
+        - Content appears with no layout breakage.
+        - TOC always visible or accessible.
+
+    # --------------------------
+    # User Story 2 — RAG Chatbot
+    # --------------------------
+    - id: US2
+      title: "Users can ask questions and get answers grounded in textbook content"
+      requirements:
+        - Floating chatbot button visible on every page.
+        - Chat panel opens as overlay.
+        - Users can ask open-ended questions.
+        - System must retrieve relevant textbook chunks.
+        - Answer must include citations to chapters.
+        - Selected-text override must work:
+            * user highlights text → questions answer only from selected text.
+      success_criteria:
+        - Chatbot answers accurately based on textbook text only.
+        - Citations link to correct chapters.
+        - Selected-text queries override default RAG.
+
+    # --------------------------
+    # User Story 3 — Urdu Translation (RTL)
+    # --------------------------
+    - id: US3
+      title: "Users can translate any chapter into Urdu"
+      requirements:
+        - Translate button on each chapter.
+        - Full chapter content translated.
+        - RTL layout applied only in Urdu mode.
+        - Typography shifts appropriately.
+      success_criteria:
+        - Translation maintains meaning.
+        - RTL layout applies correctly.
+        - User can switch back to English.
+
+    # --------------------------
+    # User Story 4 — Personalization
+    # --------------------------
+    - id: US4
+      title: "Logged-in users can personalize content"
+      requirements:
+        - Users answer background questions at signup.
+        - Chapters change tone/details based on user background.
+        - Personalization must not alter factual meaning.
+      success_criteria:
+        - Personalized content is noticeably different.
+        - User sees their personalized view consistently.
+
+    # --------------------------
+    # User Story 5 — Authentication (BetterAuth bonus)
+    # --------------------------
+    - id: US5
+      title: "Users can create accounts and log in"
+      requirements:
+        - Signup requires:
+            * name
+            * email
+            * background: software, hardware, robotics, AI
+        - Login with email + password.
+        - Auth state must persist across pages.
+      success_criteria:
+        - Protected pages open only when logged in.
+        - User metadata stored and available for personalization.
+
+    # --------------------------
+    # User Story 6 — Dashboard
+    # --------------------------
+    - id: US6
+      title: "Users can view dashboard showing progress and tools"
+      requirements:
+        - Show read chapters.
+        - Show time spent reading.
+        - Show recommended chapters based on background.
+      success_criteria:
+        - Dashboard updates in real time.
+        - Recommendations match user's background.
+
+    # --------------------------
+    # User Story 7 — Summaries & Quizzes
+    # --------------------------
+    - id: US7
+      title: "User can generate summaries and quizzes using AI"
+      requirements:
+        - One-click chapter summary generation.
+        - One-click quiz generation (MCQs + short answers).
+        - Grounded only in chapter content.
+      success_criteria:
+        - Summary is accurate and grounded.
+        - Quiz questions are correct and answerable via chapter text.
+
+    # --------------------------
+    # User Story 8 — Subagents (Bonus 50 points)
+    # --------------------------
+    - id: US8
+      title: "System must use multi-agent architecture"
+      requirements:
+        - Dedicated subagents:
+            * File-writing agent
+            * Planning agent
+            * Code-generation agent
+            * UI agent
+        - Reusable intelligence allowed across features.
+      success_criteria:
+        - Each subagent performs isolated responsibilities.
+        - No cross-contamination of responsibilities.
+
+  non_functional_requirements:
+    - System must load in < 2 seconds on broadband.
+    - Chatbot latency < 2 seconds for most responses.
+    - RAG accuracy: ≥ 90% correct chunk retrieval.
+    - Mobile responsive design mandatory.
+    - All text must be accessible (WCAG AA).
+    - System must sustain minimum 100 concurrent visitors.
+
+  edge_cases:
+    - User highlights empty text → fallback to whole-book RAG.
+    - User selects non-English text → ignore selection.
+    - Urdu translation for code blocks → do not translate code.
+    - Very long chapters → chunking must not break sentences.
+    - Chatbot asked question outside book → respond with limitation.
+
+  acceptance_criteria:
+    - All user stories implemented.
+    - All bonus scoring criteria included.
+    - Deployable frontend + backend.
+    - GitHub repo clean and complete.
+    - Textbook readable and professional.
+    - Chatbot accurate, citation-based.
+    - Demo video < 90 seconds.
+
+end
+
+
+/sp.plan
+
+/sp. Implementation
