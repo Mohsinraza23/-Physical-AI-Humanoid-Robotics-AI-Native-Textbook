@@ -1,242 +1,70 @@
 # 🤖 Physical AI & Humanoid Robotics — AI-Native Textbook
 
-<p align="center">
-  <b>Hackathon Project • AI-Powered Textbook Generator</b><br/>
-  Built with ❤️ by <b>Mohsin Raza</b>
-</p>
+**An entirely AI-generated, interactive textbook** built using **SpecifyPlus**, **Gemini API**, and **Claude Code Router** — a fully automated multi-agent system that writes complete books with chapters, diagrams, RAG chatbot, Urdu translation, and personalization.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/AI%20Powered-Gemini%202.5-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Framework-SpecifyPlus-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Router-Claude%20Code%20Router-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Language-Python%203.14-yellow?style=for-the-badge"/>
-</p>
+[![GitHub stars](https://img.shields.io/github/stars/Mohsinraza23-Physical-AI-Humanoid-Robotics-AI-Native-Textbook?style=social)](https://github.com/Mohsinraza23-Physical-AI-Humanoid-Robotics-AI-Native-Textbook/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Made in Pakistan](https://img.shields.io/badge/Made%20in-Pakistan-🇵🇰-green)](https://github.com/Mohsinraza23)
+
+> **Hackathon Project** • **100% AI-Native Book Generation Workflow**
+
+Built with ❤️ by **Mohsin Raza**
 
 ---
 
-## 🧑‍💻 Author — Mohsin Raza
-
+### 🧑‍💻 Author — Mohsin Raza
 - 🎓 Full-Stack Developer • AI Engineer  
-- 🤖 Robotics & Automation Enthusiast  
-- 📧 Email: mohsinraza332@gmail.com  
-- 🔗 LinkedIn: [Mohsin Raza](https://www.linkedin.com/in/mohsin-raza-a514392b6)  
-- 📱 Phone: 03452615590  
+- 🤖 Robotics & Physical AI Enthusiast  
+- 📧 **Email**: [mohsinraza332@gmail.com](mailto:mohsinraza332@gmail.com)  
+- 🔗 **LinkedIn**: [Mohsin Raza](https://www.linkedin.com/in/mohsinraza23)  
+- 📱 **Phone**: +92 345 2615590  
+- 🌍 **Location**: Pakistan  
 
 ---
 
 ## 📑 Table of Contents
-
-- [🚀 Introduction](#-introduction)  
-- [⚙️ Install Requirements](#️-install-requirements)  
-- [💾 Create Project Folder](#-create-project-folder)  
-- [📘 Initialize the Project](#-initialize-the-project)  
-- [📚 Book Generation Workflow](#-book-generation-workflow)  
-- [📝 Constitution & Specification](#-constitution--specification)  
-- [🎯 Next Steps](#-next-steps)  
-- [⭐ Author Links](#-author-links)  
+- [🚀 Introduction](#-introduction)
+- [⚙️ Quick Start](#️-quick-start)
+- [📚 Book Generation Workflow](#-book-generation-workflow)
+- [📝 Constitution & Specification](#-constitution--specification)
+- [🎯 Next Steps](#-next-steps)
+- [⭐ Live Demo (Coming Soon)](#-live-demo)
+- [🤝 Contributing](#-contributing)
+- [⭐ Star History](#-star-history)
 
 ---
 
 ## 🚀 Introduction
+This repository contains the **world’s first fully AI-native textbook** on **Physical AI & Humanoid Robotics**, generated automatically using a multi-agent orchestration system powered by:
 
-This repository contains the **AI-generated educational textbook**  
-**“Physical AI & Humanoid Robotics — AI-Native Edition”**,  
-created using **SpecifyPlus**, **Gemini API**, and **Claude-Code Router**.  
+- **SpecifyPlus** – Agentic framework  
+- **Claude 3.5 Sonnet** – Code & content generation  
+- **Gemini 1.5 Pro** – Multimodal understanding  
+- **RAG + Vector Search** – Accurate Q&A with citations  
 
-A fully automated system that generates complete book content  
-with chapters, sections, explanations, and diagrams.
+The entire book (chapters, diagrams, quizzes, Urdu translation, interactive UI) was created **without manual writing** — pure agent-to-agent collaboration.
 
 ---
 
-## ⚙️ Install Requirements (PowerShell)
+## ⚙️ Quick Start (One-Command Setup)
 
 ```powershell
-# Install the SpecifyPlus framework
+# 1. Install SpecifyPlus
 pip install specifyplus
 
-# Verify installation
-specifyplus --version
-💾 Create Project Folder
-powershell
-Copy code
-# Move to Desktop
-cd ~/Desktop
+# 2. Clone & enter project
+git clone https://github.com/Mohsinraza23-Physical-AI-Humanoid-Robotics-AI-Native-Textbook.git
+cd Physical-AI-Humanoid-Robotics-AI-Native-Textbook
 
-# Create project folder
-mkdir robotics-ai-book
-cd robotics-ai-book
-📘 Initialize the Project
-powershell
-Copy code
-# Initialize SpecifyPlus system
+# 3. Initialize the AI-native project
 specifyplus init .
 
-# Run Claude or Gemini or Quen
-📚 Book Generation Workflow
-1️⃣ /sp.constitution — Defines the entire rule system for the book.
-2️⃣ /sp.specify — Full functional requirements, tech-agnostic.
-3️⃣ /sp.plan — Architecture & phased plan.
-4️⃣ /sp.tasks — Breaks plan into actionable tasks.
-5️⃣ /sp.implement — Code generation with Claude + subagents.
-
-📝 Constitution & Specification
-Constitution
-Version: 1.0
-
-Purpose:
-Defines workflow, rules, quality standards, and constraints for producing a fully AI-native textbook & RAG system. Ensures outputs are structured, testable, and hackathon-ready.
-
-Guiding Principles:
-
-Outputs must be deterministic, structured, and testable.
-
-No hallucinations or unstated assumptions.
-
-Each requirement maps to tasks; tasks map to implementations.
-
-UI/UX must be professional and academic.
-
-Multi-agent architecture must remain modular.
-
-RAG system must be accurate and citation-focused.
-
-Urdu translation must preserve meaning & formatting.
-
-Personalization must respect user metadata.
-
-Key Components:
-
-Agents & Subagents (file-writing, planning, code generation, UI)
-
-RAG system: chunking, embeddings, vector search, answer generation
-
-Functional requirements: textbook reading, chatbot, Urdu translation, personalization, auth, dashboard, quizzes, subagents
-
-Non-functional requirements: performance, latency, responsiveness, accessibility, concurrency
-
-Acceptance criteria: All hackathon base + bonus features deployed, demo < 90s
-
-Functional Specification (/sp.specify)
-Project Name: AI-Native Physical AI & Humanoid Robotics Textbook Platform
-
-Objective:
-Create a complete AI-native textbook system teaching Physical AI & Humanoid Robotics, including:
-
-Full interactive textbook
-
-Built-in RAG chatbot
-
-Select-text-based question answering
-
-Urdu translation (RTL)
-
-User personalization
-
-Authentication & dashboards
-
-Multi-agent support with reusable intelligence
-
-Deployable frontend + backend
-
-Scope:
-
-In-Scope:
-
-AI-native textbook experience with responsive UI & TOC
-
-Chapter navigation & RAG chatbot
-
-Urdu translation mode (RTL)
-
-Personalized dashboards based on user metadata
-
-Subagent-based code generation workflows
-
-Frontend deployment: GitHub Pages / Vercel
-
-Backend deployment: Cloud server
-
-Out-of-Scope:
-
-Real robot control or simulation
-
-Hardware execution
-
-Functional Requirements (User Stories):
-
-US1: Read multi-chapter textbook
-
-US2: Ask questions via RAG chatbot
-
-US3: Translate chapters to Urdu (RTL)
-
-US4: Personalize content
-
-US5: Authentication system
-
-US6: Dashboard with progress & recommendations
-
-US7: AI-generated summaries & quizzes
-
-US8: Multi-agent architecture with subagents
-
-Non-Functional Requirements:
-
-Load < 2s, Chatbot latency < 2s
-
-RAG accuracy ≥ 90%
-
-Mobile responsive, WCAG AA accessibility
-
-Minimum 100 concurrent visitors
-
-Edge Cases:
-
-Empty or non-English selection → fallback to full book
-
-Urdu translation excludes code blocks
-
-Long chapters → chunking preserves sentences
-
-Chatbot asked outside-book questions → limitation notice
-
-Acceptance Criteria:
-
-All user stories implemented
-
-All bonus features included
-
-Deployable frontend + backend
-
-Clean GitHub repo
-
-Textbook professional & readable
-
-Chatbot accurate with citations
-
-Demo < 90s
-
-🎯 Next Steps
-/sp.plan — Architecture & phased plan
-
-/sp.tasks — Break plan into tasks
-
-/sp.implement — Generate code using Claude & subagents
-
-Deployment — Frontend: GitHub Pages / Vercel, Backend: Cloud
-
-⭐ Author Links
-📧 Email — mohsinraza332@gmail.com
-
-🔗 LinkedIn — Mohsin Raza
-
-📱 Phone — 03452615590
-
-<h3 align="center">✨ Created with ❤️ by Mohsin Raza — Pakistan Tech Community ✨</h3> ```
-✅ This is now:
-
-
-
-
-
-
+# 4. Start generating (uses Claude/Gemini under the hood)
+specifyplus run
+
+Step,Command,Description
+1. Constitution,/sp.constitution,"Defines rules, quality, and constraints"
+2. Specification,/sp.specify,Full functional & non-functional requirements
+3. Architecture Plan,/sp.plan,Phased roadmap & system design
+4. Task Breakdown,/sp.tasks,Atomic actionable tasks
+5. Implementation,/sp.implement,Multi-agent code & content generation
